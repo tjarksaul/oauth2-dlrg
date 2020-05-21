@@ -43,6 +43,10 @@ class Dlrg extends AbstractProvider {
         return ' ';
     }
 
+    public function getAccessToken($grant = 'authorization_code', array $params = []) {
+        return parent::getAccessToken($grant, $params);
+    }
+
     public function getResourceOwnerDetailsUrl(AccessToken $token) {
         return static::BASE_DLRG_URL . '/userinfo';
     }
