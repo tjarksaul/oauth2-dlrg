@@ -52,7 +52,6 @@ class Dlrg extends AbstractProvider {
     }
 
     protected function checkResponse(ResponseInterface $response, $data) {
-        var_dump($data);
         if (!empty($data['error'])) {
             $message = $data['error'] . ': ' . $data['error_description'];
             throw new IdentityProviderException($message, 42, $data);
