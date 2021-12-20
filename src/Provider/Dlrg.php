@@ -13,7 +13,7 @@ class Dlrg extends AbstractProvider {
     /**
      * @const string
      */
-    const BASE_DLRG_URL = 'https://dlrg.net/oauth2';
+    const BASE_DLRG_URL = 'https://iam.dlrg.net/auth/realms/master/protocol/openid-connect/';
 
     const ACCESS_TOKEN_RESOURCE_OWNER_ID = 'sub';
 
@@ -28,7 +28,7 @@ class Dlrg extends AbstractProvider {
     }
 
     public function getBaseAuthorizationUrl() {
-        return static::BASE_DLRG_URL . '/authorize';
+        return static::BASE_DLRG_URL . '/auth';
     }
 
     public function getBaseAccessTokenUrl(array $params) {
