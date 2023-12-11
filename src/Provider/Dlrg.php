@@ -13,7 +13,7 @@ class Dlrg extends AbstractProvider {
     /**
      * @const string
      */
-    const BASE_DLRG_URL = 'https://iam.dlrg.net/auth/realms/master/protocol/openid-connect/';
+    const BASE_DLRG_URL = 'https://iam.dlrg.net/auth/realms/master/protocol/openid-connect';
 
     const ACCESS_TOKEN_RESOURCE_OWNER_ID = 'sub';
 
